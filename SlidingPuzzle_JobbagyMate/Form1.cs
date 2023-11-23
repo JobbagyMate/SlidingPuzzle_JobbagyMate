@@ -31,7 +31,7 @@ namespace SlidingPuzzle_JobbagyMate
         {
             if(button1.Text == "1" && button2.Text == "2" && button3.Text == "3" && button4.Text == "4" && button5.Text == "5" && button6.Text == "6" && button7.Text == "7" && button8.Text == "8")
             {
-                MessageBox.Show("Well done you are a winner", "Shuffle Game", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Well done! You won!", "Sliding Puzzle", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             Counter = Counter + 1;
             textBox1.Text = "Number of clicks: " + Counter;
@@ -96,7 +96,7 @@ namespace SlidingPuzzle_JobbagyMate
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult iExit = MessageBox.Show("Do you want to exit?", "Shuffle Games", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult iExit = MessageBox.Show("Do you want to exit?", "Sliding Puzzle", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (iExit == DialogResult.No)
             {
@@ -106,7 +106,7 @@ namespace SlidingPuzzle_JobbagyMate
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            DialogResult iExit = MessageBox.Show("Do you want to exit?", "Shuffle Games", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult iExit = MessageBox.Show("Do you want to exit?", "Sliding Puzzle", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (iExit == DialogResult.Yes)
             {
